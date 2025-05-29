@@ -1,0 +1,119 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f4f8fb;
+    color: #222e3a;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #1976d2 60%, #63a4ff 100%);
+    color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(25, 118, 210, 0.1);
+}
+/* Footer */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #1976d2 60%, #63a4ff 100%);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0.5rem;
+    box-shadow: 0 -2px 8px rgba(25, 118, 210, 0.1);
+    z-index: 100;
+}
+h1, h2, h3 {
+    color: #1976d2;
+    margin-top: 0;
+}
+
+/* Chart Container */
+.chart-container {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(25, 118, 210, 0.08);
+    margin: 2rem auto;
+    max-width: 900px;
+    padding: 2rem;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    background: #f7fbff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+}
+
+th {
+    background: #1976d2;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+tr:nth-child(even) {
+    background: #e3f0fc;
+}
+
+tr:hover {
+    background: #bbdefb;
+}
+
+/* Buttons */
+.button {
+    background: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.button:hover {
+    background: #1565c0;
+}
+
+/* Forms */
+input, select, textarea {
+    border: 1px solid #b3c6e0;
+    border-radius: 4px;
+    padding: 0.6rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+label {
+    font-weight: 500;
+    color: #1976d2;
+    margin-bottom: 0.3rem;
+    display: block;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .chart-container, table, th, td {
+        padding: 0.5rem;
+        font-size: 0.95rem;
+    }
+    header {
+        padding: 1rem 0.5rem;
+    }
+}
